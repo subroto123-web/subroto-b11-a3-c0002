@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,25 +18,83 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'green-bg': '#179800',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 
-      <!-- Font Awesome CDN -->
-      <script src="https://kit.fontawesome.com/2216bc6d4e.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/2216bc6d4e.js" crossorigin="anonymous"></script>
 
-      <style>
-        .sora-font{
+    <style>
+        .sora-font {
             font-family: "Sora", serif;
         }
-      </style>
+    </style>
 </head>
-<body class="sora-font">
+
+<body class="sora-font ">
+    <!-- Header Section -->
+    <Header class="bg-gradient-to-b from-white to-[#EFEBE3] ">
+        <!-- Nav Section -->
+        <section class="container md:mx-auto lg:mx-auto mb-5">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <a class=""><img src="./Images/logo-header.png" alt=""></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Product</a></li>
+                        <li>
+                            <a>Services</a>
+                        </li>
+                        <li><a>Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end invisible lg:visible space-x-4">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <a class="btn hover:bg-green-bg text-black border-2 border-green-bg hover:text-white">LogIn</a>
+                    <a class="btn bg-green-bg text-white hover:text-black">Register</a>
+                </div>
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden flex justify-end">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="invisible" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a>Product</a></li>
+                        <li>
+                            <a>Services</a>
+                        </li>
+                        <li><a>Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- banner section -->
+        <div class="text-center space-y-6 w-full">
+            <h1 class="text-3xl md:4xl lg:text-5xl font-semibold">Freshness <span class="text-green-bg">You Can <br>
+                    Count</span> On, Prices You’ll Love!
+            </h1>
+            <p>Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you
+                covered every day!</p>
+            <div class="">
+                <img class="w-1/2 mx-auto" src="./Images/hero-vegetables.png" alt="">
+            </div>
+
+        </div>
+    </Header>
 </body>
+
 </html>
