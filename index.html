@@ -191,7 +191,7 @@
     </section>
 
     <!-- main section -->
-    <main class="bg-primary-bg mb-10 lg:mb-20 pb-10 lg:pb-20">
+    <main class="bg-primary-bg mb-10 lg:mb-20 pb-10 lg:pb-20 ">
         <div class="container mx-auto">
             <div>
                 <h1 class="text-2xl font-bold text-green-bg p-5 ">Popular Products</h1>
@@ -206,7 +206,7 @@
                     <img src="./Images/vegetable-offer.png" alt="" class="absolute right-0 bottom-0">
                 </div>
                 <!-- Right card -->
-                <div class="w-full grid grid-cols-2 lg:grid-cols-3 gap-4 rounded-xl  h-[400px] ">
+                <div class="w-full grid grid-cols-2 lg:grid-cols-3 gap-4 rounded-xl  h-[400px] overflow-hidden">
                     <!-- card 1 -->
                     <div class="bg-white rounded-lg flex flex-row  space-y-2  items-center justify-center">
                         <div>
@@ -337,7 +337,34 @@
             </div>
         </div>
     </main>
-
+    <!-- Offer section -->
+    <section class="container mx-auto my-6 lg:my-11 mt-6">
+        <div class="text-2xl font-bold text-green-bg p-5">
+            <h1>Arrival & Offers</h1>
+        </div>
+        <div class="flex flex-col md:flex-row lg:flex-row gap-5 mx-auto container">
+            <div class="md:w-3/5 lg:w-3/5 bg-[#115414] rounded-xl p-5">
+                <div class="flex flex-row justify-between items-center">
+                    <div class="p-7 flex flex-col justify-center items-center space-y-3">
+                        <img src="./Images/dawat-logo.png" alt="">
+                        <button class="text-white bg-[#63B76D] py-4 px-10 rounded-lg">Cook Exotic Dishes</button>
+                        <h1 class="text-2xl text-white">UP to <span class="font-bold">20% OFF</span></h1>
+                    </div>
+                    <div><img src="./Images/dawat-mock-up.png" alt=""></div>
+                </div>
+            </div>
+            <div class="md:w-2/5 lg:w-2/5 bg-[#102861] rounded-xl p-5">
+                <div class="flex flex-row justify-between items-center">
+                    <div class="p-7 flex flex-col justify-center items-center space-y-3">
+                        <img src="./Images/india-gate-logo.png" alt="">
+                        <button class="text-white bg-[#2A4D97] py-4 px-8 rounded-lg">World’s No.1 Rice</button>
+                        <h1 class="text-2xl text-white">UP to <span class="font-bold">40% OFF</span></h1>
+                    </div>
+                    <div><img src="./Images/india-gate-mock-up.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
