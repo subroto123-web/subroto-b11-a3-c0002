@@ -23,6 +23,7 @@
                     colors: {
                         clifford: '#da373d',
                         'green-bg': '#179800',
+                        'primary-bg': '#EFEBE3',
                     }
                 }
             }
@@ -46,7 +47,7 @@
         <section class="container md:mx-auto lg:mx-auto mb-5">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
-                    <a class=""><img src="./Images/logo-header.png" alt=""></a>
+                    <a class=""><img class="bg-white w-full p-3" src="./Images/logo-header.png" alt=""></a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
@@ -63,7 +64,7 @@
                     <a class="btn hover:bg-green-bg text-black border-2 border-green-bg hover:text-white">LogIn</a>
                     <a class="btn bg-green-bg text-white hover:text-black">Register</a>
                 </div>
-                <div class="dropdown">
+                <div class="dropdown relative">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden flex justify-end">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="invisible" viewBox="0 0 24 24"
                             stroke="currentColor">
@@ -72,7 +73,7 @@
                         </svg>
                     </div>
                     <ul tabindex="0"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 p-2 shadow absolute right-3">
                         <li><a>Product</a></li>
                         <li>
                             <a>Services</a>
@@ -84,17 +85,62 @@
         </section>
         <!-- banner section -->
         <div class="text-center space-y-6 w-full">
-            <h1 class="text-3xl md:4xl lg:text-5xl font-semibold">Freshness <span class="text-green-bg">You Can <br>
+            <h1 class="text-3xl md:4xl lg:text-5xl font-semibold">Freshness <span class="text-green-bg mx-auto">You Can <br>
                     Count</span> On, Prices You’ll Love!
             </h1>
-            <p>Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you
+            <p class="mx-auto">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you
                 covered every day!</p>
             <div class="">
-                <img class="w-1/2 mx-auto" src="./Images/hero-vegetables.png" alt="">
+                <img class="p-3 w-1/2 mx-auto"  src="./Images/hero-vegetables.png" alt="">
             </div>
 
         </div>
     </Header>
+
+    <!-- container section -->
+    <section class="container my-10 mx-auto">
+        <h1 class="text-2xl font-bold text-green-bg mb-10 mx-auto p-7">Services</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 text-center ">
+            <!-- card 1 -->
+            <div class="flex flex-col justify-center items-center space-y-7 bg-primary-bg rounded-xl p-8 w-5/6 mx-auto">
+                <div class="avatar">
+                    <div class="w-32 rounded-full">
+                        <img class="bg-white w-full p-3" src="./Images/service.png" />
+                    </div>
+                </div>
+                <h1 class="text-3xl font-bold">24/7 Services </h1>
+                <p>24/7 services are available around the clock, <br> ensuring continuous support and accessibility. </p>
+
+            </div>
+            <!-- card 2 -->
+            <div class="flex flex-col justify-center items-center space-y-7 bg-primary-bg rounded-xl p-8 w-5/6 mx-auto">
+                <div class="avatar">
+                    <div class="w-32 rounded-full">
+                        <img class="bg-white w-full p-3" src="./Images/delivery.png" />
+                    </div>
+                </div>
+                <h1 class="text-3xl font-bold">24/7 Services </h1>
+                <p>24/7 services are available around the clock, <br> ensuring continuous support and accessibility. </p>
+
+            </div>
+            <!-- card 3 -->
+            <div class="flex flex-col justify-center items-center space-y-7 bg-primary-bg rounded-xl p-8 w-5/6 mx-auto">
+                <div class="avatar">
+                    <div class="w-32 rounded-full">
+                        <img class="bg-white w-full p-3" class="bg-white w-full p-3" src="./Images/healthy.png" />
+                    </div>
+                </div>
+                <h1 class="text-3xl font-bold">24/7 Services </h1>
+                <p>24/7 services are available around the clock, <br> ensuring continuous support and accessibility. </p>
+
+            </div>
+        </div>
+
+    </section>
+    <!-- main section -->
+    <main class="">
+        
+    </main>
 </body>
 
 </html>
